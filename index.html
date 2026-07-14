@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Meviox — Emergency Care, At Your Doorstep</title>
+<link
+      rel="icon"
+      type="image/x-icon"
+      sizes="128x128"
+      href="static/favicon.ico"
+    />
+
+<meta name="description" content="Meviox brings verified doctors to your home in minutes. Emergency care, instant response, trusted healthcare — anywhere in Delhi NCR, 24x7.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <!-- <span class="brand-mark"><i class="fa-solid fa-plus"></i></span>
+      <span class="brand-word">meviox</span> -->
+      <img src="static/img/logo.jpeg" height="40">
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#experts">Our Doctors</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="tel:+919729644570" class="nav-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 97296 44570</span>
+      </a>
+      <button class="btn btn-primary btn-sm open-modal-btn">Book Doctor</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#how">How It Works</a>
+    <a href="#experts">Our Doctors</a>
+    <a href="#faq">FAQ</a>
+    <a href="tel:+919729644570" class="mobile-phone"><i class="fa-solid fa-phone"></i> +91 97296 44570</a>
+    <button class="btn btn-primary open-modal-btn">Book Doctor</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="grid-pattern"></div>
+    <div class="glow-blob glow-blob--1"></div>
+    <div class="glow-blob glow-blob--2"></div>
+    <svg class="ekg-line" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path class="ekg-path" d="M0,60 L140,60 L165,60 L180,20 L200,100 L220,60 L260,60 L280,45 L300,60 L1200,60"
+        fill="none" stroke-width="2.5" />
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> INDIA'S FASTEST HOME HEALTHCARE NETWORK</span>
+
+      <h1 class="hero-title">
+  Emergency Care,<br>
+  <span class="grad-text">At Your Doorstep.</span>
+</h1>
+
+<!-- MOBILE-ONLY ambulance — shown just below the heading on small screens -->
+<div class="hero-visual hero-visual--mobile reveal">
+  <div class="ambulance-glow"></div>
+  <!-- <svg class="ambulance-svg" viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an ambulance">
+    <ellipse cx="290" cy="330" rx="200" ry="18" fill="#1e3a8a" opacity="0.08"/>
+    <g class="amb-float">
+      <rect x="70" y="150" width="330" height="120" rx="18" fill="#ffffff" stroke="#dbeafe" stroke-width="3"/>
+      <rect x="70" y="150" width="330" height="34" rx="10" fill="#2563eb"/>
+      <rect x="340" y="120" width="120" height="90" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="3"/>
+      <rect x="352" y="140" width="46" height="34" rx="6" fill="#bfdbfe"/>
+      <rect x="352" y="140" width="46" height="34" rx="6" fill="none" stroke="#3b82f6" stroke-width="2"/>
+      <g transform="translate(190,175)">
+        <rect x="-30" y="-9" width="60" height="18" rx="4" fill="#1d4ed8"/>
+        <rect x="-9" y="-30" width="18" height="60" rx="4" fill="#1d4ed8"/>
+      </g>
+      <rect x="70" y="222" width="330" height="10" fill="#38bdf8" opacity="0.55"/>
+      <rect x="150" y="105" width="70" height="16" rx="6" fill="#1e3a8a"/>
+      <rect x="150" y="105" width="35" height="16" rx="6" fill="#3b82f6"/>
+      <rect x="440" y="140" width="16" height="60" rx="6" fill="#93c5fd" opacity="0.6"/>
+      <circle cx="150" cy="272" r="30" fill="#1f2937"/>
+      <circle cx="150" cy="272" r="13" fill="#dbeafe"/>
+      <circle cx="360" cy="272" r="30" fill="#1f2937"/>
+      <circle cx="360" cy="272" r="13" fill="#dbeafe"/>
+      <rect x="440" y="230" width="30" height="20" rx="6" fill="#93c5fd"/>
+    </g>
+    <g class="amb-motion" opacity="0.5" stroke="#3b82f6" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="200" x2="45" y2="200"/>
+      <line x1="10" y1="225" x2="40" y2="225"/>
+      <line x1="0" y1="250" x2="35" y2="250"/>
+    </g>
+  </svg> -->
+  <svg class="ambulance-svg" viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an ambulance">
+  <defs>
+    <linearGradient id="ambBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5fe"/>
+    </linearGradient>
+    <linearGradient id="ambGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe0ff"/>
+      <stop offset="100%" stop-color="#8fc7f7"/>
+    </linearGradient>
+    <radialGradient id="wheelHub" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#c7d6ee"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="300" cy="335" rx="220" ry="16" fill="#1e3a8a" opacity="0.10"/>
+
+  <g class="amb-float">
+    <!-- rear cargo box -->
+    <rect x="80" y="140" width="320" height="130" rx="16" fill="url(#ambBody)" stroke="#c9dbfa" stroke-width="3"/>
+    <!-- roof strip -->
+    <rect x="80" y="140" width="320" height="30" rx="9" fill="#2563eb"/>
+    <!-- lower skirt stripe -->
+    <rect x="80" y="228" width="320" height="14" fill="#38bdf8" opacity="0.6"/>
+    <!-- red cross emblem -->
+    <g transform="translate(195,200)">
+      <circle r="34" fill="#ffffff" stroke="#dbeafe" stroke-width="2"/>
+      <rect x="-26" y="-7" width="52" height="14" rx="3" fill="#dc2626"/>
+      <rect x="-7" y="-26" width="14" height="52" rx="3" fill="#dc2626"/>
+    </g>
+    <!-- rear door seam + handle -->
+    <line x1="80" y1="170" x2="80" y2="242" stroke="#c9dbfa" stroke-width="2"/>
+    <rect x="88" y="198" width="6" height="16" rx="3" fill="#93a9c9"/>
+
+    <!-- cab (front) -->
+    <path d="M400,178 L452,178 Q470,178 478,196 L494,232 L494,270 L400,270 Z" fill="url(#ambBody)" stroke="#c9dbfa" stroke-width="3"/>
+    <!-- windshield -->
+    <path d="M410,188 L448,188 Q458,188 464,200 L470,222 L410,222 Z" fill="url(#ambGlass)" stroke="#7fb8ef" stroke-width="2"/>
+    <!-- side mirror -->
+    <rect x="474" y="204" width="10" height="6" rx="2" fill="#5b7fb8"/>
+    <!-- door seam + handle -->
+    <line x1="452" y1="178" x2="452" y2="270" stroke="#c9dbfa" stroke-width="2"/>
+    <rect x="460" y="228" width="14" height="6" rx="3" fill="#93a9c9"/>
+    <!-- front grille + headlight + bumper -->
+    <rect x="486" y="238" width="10" height="18" rx="3" fill="#1f2937"/>
+    <circle cx="500" cy="228" r="7" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="486" y="256" width="26" height="14" rx="5" fill="#93c5fd"/>
+
+    <!-- roof light bar -->
+    <rect x="168" y="118" width="90" height="20" rx="7" fill="#1e3a8a"/>
+    <rect x="171" y="121" width="41" height="14" rx="5" fill="#ef4444"/>
+    <rect x="214" y="121" width="41" height="14" rx="5" fill="#3b82f6"/>
+    <rect x="209" y="108" width="4" height="12" fill="#94a3b8"/>
+
+    <!-- wheel wells (shadow arcs) -->
+    <path d="M118,270 a42,42 0 0 1 84,0 Z" fill="#0f1c3d" opacity="0.06"/>
+    <path d="M336,270 a42,42 0 0 1 84,0 Z" fill="#0f1c3d" opacity="0.06"/>
+
+    <!-- wheels -->
+    <circle cx="160" cy="272" r="32" fill="#1f2937"/>
+    <circle cx="160" cy="272" r="14" fill="url(#wheelHub)"/>
+    <circle cx="160" cy="272" r="4" fill="#94a3b8"/>
+    <circle cx="378" cy="272" r="32" fill="#1f2937"/>
+    <circle cx="378" cy="272" r="14" fill="url(#wheelHub)"/>
+    <circle cx="378" cy="272" r="4" fill="#94a3b8"/>
+  </g>
+
+  <!-- motion lines -->
+  <g class="amb-motion" opacity="0.5" stroke="#3b82f6" stroke-width="4" stroke-linecap="round">
+    <line x1="0" y1="200" x2="48" y2="200"/>
+    <line x1="10" y1="228" x2="42" y2="228"/>
+    <line x1="0" y1="252" x2="38" y2="252"/>
+  </g>
+</svg>
+</div>
+
+<div class="hero-chips">
+
+      <div class="hero-chips">
+        <span class="chip">Qualified Doctors</span>
+        <span class="chip">Instant Response</span>
+        <span class="chip">Trusted Healthcare</span>
+      </div>
+
+      <p class="hero-desc">
+        One call brings a verified doctor to your home — day or night. Transparent fees,
+        real-time GPS dispatch, and a care team that treats every minute like it matters.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fa-solid fa-user-doctor"></i> Book Doctor
+        </button>
+        <a href="tel:+919729644570" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-phone-volume"></i> Emergency Call
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">12,000+</span>
+          <span class="stat-label">Patients Cared For</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.9<i class="fa-solid fa-star"></i></span>
+          <span class="stat-label">Google Rating</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15-Min</span>
+          <span class="stat-label">Avg. Response</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24×7</span>
+          <span class="stat-label">Always Available</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="ambulance-glow"></div>
+      <svg class="ambulance-svg" viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of an ambulance">
+        <ellipse cx="290" cy="330" rx="200" ry="18" fill="#1e3a8a" opacity="0.08"/>
+
+        <!-- body -->
+        <g class="amb-float">
+          <rect x="70" y="150" width="330" height="120" rx="18" fill="#ffffff" stroke="#dbeafe" stroke-width="3"/>
+          <rect x="70" y="150" width="330" height="34" rx="10" fill="#2563eb"/>
+          <rect x="340" y="120" width="120" height="90" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="3"/>
+          <rect x="352" y="140" width="46" height="34" rx="6" fill="#bfdbfe"/>
+          <rect x="352" y="140" width="46" height="34" rx="6" fill="none" stroke="#3b82f6" stroke-width="2"/>
+
+          <!-- cross -->
+          <g transform="translate(190,175)">
+            <rect x="-30" y="-9" width="60" height="18" rx="4" fill="#1d4ed8"/>
+            <rect x="-9" y="-30" width="18" height="60" rx="4" fill="#1d4ed8"/>
+          </g>
+
+          <!-- stripe -->
+          <rect x="70" y="222" width="330" height="10" fill="#38bdf8" opacity="0.55"/>
+
+          <!-- light bar -->
+          <rect x="150" y="105" width="70" height="16" rx="6" fill="#1e3a8a"/>
+          <rect x="150" y="105" width="35" height="16" rx="6" fill="#3b82f6"/>
+
+          <!-- windshield -->
+          <rect x="440" y="140" width="16" height="60" rx="6" fill="#93c5fd" opacity="0.6"/>
+
+          <!-- wheels -->
+          <circle cx="150" cy="272" r="30" fill="#1f2937"/>
+          <circle cx="150" cy="272" r="13" fill="#dbeafe"/>
+          <circle cx="360" cy="272" r="30" fill="#1f2937"/>
+          <circle cx="360" cy="272" r="13" fill="#dbeafe"/>
+
+          <!-- bumper -->
+          <rect x="440" y="230" width="30" height="20" rx="6" fill="#93c5fd"/>
+        </g>
+
+        <!-- motion lines -->
+        <g class="amb-motion" opacity="0.5" stroke="#3b82f6" stroke-width="4" stroke-linecap="round">
+          <line x1="0" y1="200" x2="45" y2="200"/>
+          <line x1="10" y1="225" x2="40" y2="225"/>
+          <line x1="0" y1="250" x2="35" y2="250"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THREE PILLARS ================= -->
+<section class="pillars" id="services">
+  <div class="section-inner">
+    <span class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> OUR CARE PROMISE</span>
+    <h2 class="section-title reveal">Care You Can<br>Set Your Watch By.</h2>
+    <p class="section-sub reveal">We're not a doctor-booking app. We're building the emergency response layer for healthcare in India.</p>
+
+    <div class="pillar-grid">
+      <article class="pillar-card reveal">
+        <div class="pillar-top">
+          <span class="pillar-num">01 — THE RESPONSE</span>
+        </div>
+        <div class="pillar-icon"><i class="fa-solid fa-truck-medical"></i></div>
+        <h3>15-Min Doctor, Anywhere</h3>
+        <p>Verified doctors and paramedics reach your home within 15 minutes, anywhere in Delhi NCR. Emergency kit and essential medicines on board.</p>
+        <span class="pillar-badge">✓ LIVE NOW</span>
+      </article>
+
+      <article class="pillar-card reveal">
+        <div class="pillar-top">
+          <span class="pillar-num">02 — THE GUARANTEE</span>
+        </div>
+        <div class="pillar-icon"><i class="fa-solid fa-clock"></i></div>
+        <h3>24×7 Availability</h3>
+        <p>Health emergencies don't wait for clinic hours. Neither do we. One call connects you to care at 3am, on a holiday, any day of the year.</p>
+        <span class="pillar-badge">✓ ALWAYS ON</span>
+      </article>
+
+      <article class="pillar-card reveal">
+        <div class="pillar-top">
+          <span class="pillar-num">03 — THE STANDARD</span>
+        </div>
+        <div class="pillar-icon"><i class="fa-solid fa-user-doctor"></i></div>
+        <h3>Verified Doctors, Transparent Fees</h3>
+        <p>MBBS/MD certified doctors only. Fixed consultation fees shown upfront — no hidden charges, no surprise billing, ever.</p>
+        <span class="pillar-badge">✓ BOOK TODAY</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <span class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> SIMPLE BY DESIGN</span>
+    <h2 class="section-title reveal">Care In Three Steps.</h2>
+
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+        <h4>Share Your Location</h4>
+        <p>Tap detect GPS or type your address — we pinpoint you instantly.</p>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-icon"><i class="fa-solid fa-comment-medical"></i></div>
+        <h4>Describe The Issue</h4>
+        <p>Tell us the symptoms. We match you with the right specialist.</p>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <h4>Confirm On WhatsApp</h4>
+        <p>Get instant confirmation and live doctor tracking on WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERTS ================= -->
+<section class="experts" id="experts">
+  <div class="section-inner">
+    <span class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> MEET THE TEAM</span>
+    <h2 class="section-title reveal">Doctors You Can Trust.</h2>
+    <p class="section-sub reveal">Every doctor on Meviox is MBBS/MD verified, background-checked, and rated by real patients.</p>
+
+    <div class="expert-tabs reveal">
+      <button class="expert-tab active-tab" data-filter="all">All</button>
+      <button class="expert-tab" data-filter="general">General Physician</button>
+      <button class="expert-tab" data-filter="pediatrician">Pediatrician</button>
+      <button class="expert-tab" data-filter="cardiologist">Cardiologist</button>
+      <button class="expert-tab" data-filter="dermatologist">Dermatologist</button>
+      <button class="expert-tab" data-filter="orthopedic">Orthopedic</button>
+    </div>
+
+    <div class="experts-grid" id="experts-grid">
+
+      <article class="expert-card" data-role="general">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">RS</div>
+        <h3 class="expert-name">Dr. Rohan Sharma</h3>
+        <span class="expert-specialty-badge">General Physician</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 9 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹399 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.8 <em>(512 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card" data-role="pediatrician">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">AV</div>
+        <h3 class="expert-name">Dr. Aisha Verma</h3>
+        <span class="expert-specialty-badge">Pediatrician</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 11 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹499 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.9 <em>(410 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card" data-role="cardiologist">
+        <span class="expert-status status-busy"><span class="status-dot"></span>From 6:00 PM</span>
+        <div class="expert-avatar">VK</div>
+        <h3 class="expert-name">Dr. Vikram Kapoor</h3>
+        <span class="expert-specialty-badge">Cardiologist</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 16 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹799 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.9 <em>(687 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card" data-role="dermatologist">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">NM</div>
+        <h3 class="expert-name">Dr. Neha Malhotra</h3>
+        <span class="expert-specialty-badge">Dermatologist</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 7 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹549 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.7 <em>(298 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card extra-expert" data-role="orthopedic">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">SR</div>
+        <h3 class="expert-name">Dr. Sameer Rathi</h3>
+        <span class="expert-specialty-badge">Orthopedic</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 13 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹649 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.8 <em>(355 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card extra-expert" data-role="general">
+        <span class="expert-status status-busy"><span class="status-dot"></span>From 8:00 PM</span>
+        <div class="expert-avatar">PJ</div>
+        <h3 class="expert-name">Dr. Priya Joshi</h3>
+        <span class="expert-specialty-badge">General Physician</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 6 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹349 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.6 <em>(201 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card extra-expert" data-role="pediatrician">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">KT</div>
+        <h3 class="expert-name">Dr. Karan Tiwari</h3>
+        <span class="expert-specialty-badge">Pediatrician</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 8 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹449 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.8 <em>(276 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+      <article class="expert-card extra-expert" data-role="cardiologist">
+        <span class="expert-status status-available"><span class="status-dot"></span>Available Now</span>
+        <div class="expert-avatar">MB</div>
+        <h3 class="expert-name">Dr. Meera Bhatia</h3>
+        <span class="expert-specialty-badge">Cardiologist</span>
+        <div class="expert-meta">
+          <span><i class="fa-solid fa-briefcase-medical"></i> 14 yrs experience</span>
+          <span><i class="fa-solid fa-indian-rupee-sign"></i> ₹749 consult</span>
+        </div>
+        <div class="expert-rating"><i class="fa-solid fa-star"></i> 4.9 <em>(529 reviews)</em></div>
+        <button class="expert-book-btn open-modal-btn">Book Consultation</button>
+      </article>
+
+    </div>
+
+    <div class="view-more-wrap">
+      <button class="view-more-btn" id="view-more-experts">View more experts <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="section-inner section-inner--narrow">
+    <span class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> QUESTIONS, ANSWERED</span>
+    <h2 class="section-title reveal">Frequently Asked.</h2>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">
+          How fast can a doctor reach me?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>In most parts of Delhi NCR, a verified doctor or paramedic reaches your location within 15–20 minutes of confirming your request on WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Is this a home visit or a video consultation?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Both. Choose an in-person home visit for physical exams and emergencies, or a video consultation for quick follow-ups and prescriptions.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What if it's a real emergency that needs an ambulance?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Mention it's an emergency in the form or call our emergency line directly. We dispatch the nearest available ambulance and doctor together.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I pay for the consultation?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>Consultation fees are fixed and shown upfront on each doctor's profile. You can pay via UPI, card, or cash directly to the visiting doctor.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Which areas do you currently cover?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <p>We currently operate across Delhi NCR, including Gurugram, Noida, Faridabad, and Ghaziabad, with more cities launching soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final-cta">
+  <div class="section-inner final-cta-inner reveal">
+    <h2>A Doctor Is Closer Than<br>You Think.</h2>
+    <p>Share your location and symptoms — we'll take it from there.</p>
+    <button class="btn btn-primary btn-lg open-modal-btn">
+      <i class="fa-solid fa-user-doctor"></i> Book Doctor Now
+    </button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-inner footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <span class="brand-mark"><i class="fa-solid fa-plus"></i></span>
+        <span class="brand-word">meviox</span>
+      </a>
+      <p>India's fastest home healthcare network. Verified doctors, real emergencies, real trust.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#experts">Our Doctors</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">Home Doctor Visit</a>
+      <a href="#services">Video Consultation</a>
+      <a href="#services">Emergency Response</a>
+      <a href="#services">Lab Sample Pickup</a>
+    </div>
+
+    <div class="footer-col footer-emergency">
+      <h5>Emergency Line</h5>
+      <a href="tel:+919729644570" class="emergency-number"><i class="fa-solid fa-phone-volume"></i> +91 97296 44570</a>
+      <p>Available 24 hours a day, every day of the year.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Meviox Healthcare. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= SLIDE PANEL / TRIAGE MODAL ================= -->
+<div class="modal-overlay" id="modal-overlay"></div>
+<aside class="side-panel" id="medical-modal">
+  <div class="panel-header">
+    <h3><i class="fa-solid fa-user-doctor"></i> Request A Doctor</h3>
+    <button class="close-modal-btn" aria-label="Close panel"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <form id="triage-form" class="panel-form">
+    <label for="patient-name">Your Name</label>
+    <input type="text" id="patient-name" placeholder="e.g. Rahul Mehta" required>
+
+    <label for="patient-location">Your Location</label>
+    <div class="location-row">
+      <input type="text" id="patient-location" placeholder="Type your address..." required>
+    </div>
+    <button type="button" id="detect-gps-btn" class="gps-trigger-action">
+      <i class="fa-solid fa-crosshairs"></i> Detect My GPS Location
+    </button>
+    <div id="gps-loader" class="gps-loader hidden">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      Locating you...
+    </div>
+
+    <label for="patient-issue">Describe Your Symptoms</label>
+    <textarea id="patient-issue" rows="4" placeholder="e.g. High fever since last night, body ache..." required></textarea>
+
+    <button type="submit" class="btn btn-primary btn-block">
+      <i class="fa-brands fa-whatsapp"></i> Send Request On WhatsApp
+    </button>
+    <p class="panel-note">We'll open WhatsApp with your details pre-filled so our care team can respond instantly.</p>
+  </form>
+</aside>
+
+<a href="https://wa.me/919729644570" class="whatsapp-fab" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script src="static/js/script.js"></script>
+</body>
+</html>
